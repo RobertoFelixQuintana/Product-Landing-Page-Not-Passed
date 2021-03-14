@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            
+            @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+            }
+            .flex-container {
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                margin: 10px;
+                margin-left: 18px;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Build a Product Landing Page</title>
+        
+    </head>
+    <body>
+        <header id="header">
+                <img class="menu" id="header-img" src="https://i.imgur.com/unYA3SK.jpg"/>
+                <nav id="nav-bar" class="menu">
+                <a class="nav-link" href="#View-more">View more</a>
+                <a class="nav-link" id="subscription" href="#request-coupon">Subscription Request</a>
+                <a class="nav-link" href="#buy-on-funimation">Buy on funimation</a>
+                </nav>   
+        </header>
+        <section id="View-more">
+            <center>
+                <br>
+                 <h1>Recent FunimationYt Clips</h1>        
+                 <iframe id="video" class="videos" width="360" height="250" src="https://www.youtube.com/embed/D5FG4E-yhwI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <iframe id="video-2" class="videos" width="360" height="250" src="https://www.youtube.com/embed/qskb-5q3ic4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                 <iframe id="video-3" class="videos" width="360" height="250" src="https://www.youtube.com/embed/Q2frDxpytW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+        </section>
+        <hr>
+        <section id="request-coupon">
+            <div>
+                <form class="section-1" id="form" action="https://www.freecodecamp.com/email-submit">
+                    <h3>Subscription Request</h3>
+                    <input class="controls" id="name" type="text" placeholder="Your Name" name="name"><br>
+                    <input class="controls" id="email" type="email" placeholder="email@example.com" name="email"><br>
+                    <input class="button" id="submit" type="submit" value="Send">
+                </form> 
+                <p>
+                    If you want to be part of our great community of funimation, 
+                    you can request the process for your subscription 
+                    that will arrive to your email.
+                </p>
+            </div>
+        </section>
+        <hr>
+        <section id="buy-on-funimation">
+            <h5>Trends</h5>
+            <div class="flex-container">
+                <div>
+                    <img class="trend" src="https://derf9v1xhwwx1.cloudfront.net/image/upload/c_fill,q_80,w_265,h_397/oth/FunimationStoreFront/1485146/Spanish(LatinAm)/1485146_Spanish(LatinAm)_ShowKeyart_175c1699-3e83-439b-a7d6-5876d486f062.jpg"/>
+                </div>
+                <div>
+                    <img class="trend" src="https://derf9v1xhwwx1.cloudfront.net/image/upload/c_fill,q_80,w_265,h_397/oth/FunimationStoreFront/1287827/Japanese/1287827_Japanese_ShowKeyart_0e78afc1-6631-47bd-b4cf-ccf379761890.jpg"/>
+                </div>
+                <div>
+                    <img class="trend" src="https://derf9v1xhwwx1.cloudfront.net/image/upload/c_fill,q_80,w_265,h_397/oth/FunimationStoreFront/1732693/Spanish(LatinAm)/1732693_Spanish(LatinAm)_ShowKeyart_d6fd2e3a-ec20-4ec9-905c-5fe6fe8813ce.jpg"/>
+                </div>
+                <div>
+                    <img class="trend" src="https://derf9v1xhwwx1.cloudfront.net/image/upload/c_fill,q_80,w_265,h_397/oth/FunimationStoreFront/1963550/English/1963550_English_ShowKeyart_7ac3e555-654c-4b41-940c-9bdbe576ad01.jpg"/>
+                </div>
+                <div>
+                    <img class="trend" src="https://derf9v1xhwwx1.cloudfront.net/image/upload/c_fill,q_80,w_265,h_397/oth/FunimationStoreFront/1867167/Japanese/1867167_Japanese_ShowKeyart_5fe8dabd-6f01-4e40-b3e0-a7defb83ac4b.jpg"/>
+                </div>
+            </div>
+        </section>
+    </body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
